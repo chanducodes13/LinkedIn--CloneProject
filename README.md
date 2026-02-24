@@ -22,8 +22,6 @@ HTML5
 
 CSS3
 
-JavaScript
-
 Font Awesome (for icons)
 
 ✨ Features
