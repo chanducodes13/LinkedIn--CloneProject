@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone - Professional Network</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <i class="fab fa-linkedin linkedin-logo"></i>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="nav-center">
+                <div class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-user-friends"></i>
+                    <span>My Network</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Jobs</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-comment-dots"></i>
+                    <span>Messaging</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-bell"></i>
+                    <span>Notifications</span>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="profile-pic">
+                    <img src="./assets/profile pic.jpg" alt="Profile">
+                </div>
+                <span>Me <i class="fas fa-caret-down"></i></span>
+                <div class="nav-item business">
+                    <i class="fas fa-th"></i>
+                    <span>For Business</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <aside class="left-sidebar">
+            <div class="profile-card">
+               <div class="profile-banner">
+                   <img src="./assets/Banner.jpg" alt="Profile Banner" class="banner-image" ></div>
+                <div class="profile-info">
+                    <img src="./assets/profile pic.jpg" alt="Profile" class="profile-img-large">
+                    <h3>Chandu Dandu</h3>
+                    <p class="headline">Java Full Stack Developer | JAVA | HTML | CSS | JavaScript | Spring | Springboot |</p>
+                    <p class="location">Hyderabad, India</p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">connections</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">150</span>
+                            <span class="stat-label">followers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Views Card -->
+            <div class="sidebar-card">
+                <div class="card-item">
+                    <span>Who viewed your profile</span>
+                    <span class="card-number">150</span>
+                </div>
+                <div class="card-item">
+                    <span>Post impressions</span>
+                    <span class="card-number">2,543</span>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="sidebar-card">
+                <h4>Recent</h4>
+                <div class="recent-item">
+                    <i class="fas fa-users"></i>
+                    <span>Frontend Developers</span>
+                </div>
+                <div class="recent-item">
+                    <i class="fas fa-hashtag"></i>
+                    <span>javascript</span>
+                </div>
+                <div class="recent-item">
+                    <i class="fas fa-hashtag"></i>
+                    <span>reactjs</span>
+                </div>
+                <div class="recent-item">
+                    <i class="fas fa-building"></i>
+                    <span>Google Careers</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Feed -->
+        <section class="main-feed">
+            <!-- Create Post Box -->
+            <div class="create-post">
+                <div class="post-input">
+                    <img src="./assets/profile pic.jpg" alt="Profile" class="post-profile-img">
+                    <input type="text" placeholder="Start a post">
+                </div>
+                <div class="post-actions">
+                    <div class="post-action">
+                        <i class="fas fa-image" style="color: #378fe9;"></i>
+                        <span>Photo</span>
+                    </div>
+                    <div class="post-action">
+                        <i class="fab fa-youtube" style="color: #5f9b41;"></i>
+                        <span>Video</span>
+                    </div>
+                    <div class="post-action">
+                        <i class="fas fa-newspaper" style="color: #e16745;"></i>
+                        <span>Article</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 1 -->
+            <div class="post">
+                <div class="post-header">
+                    <img src="./assets/tech.jpg" alt="User" class="post-profile-img">
+                    <div class="post-user-info">
+                        <h4>TechCrunch</h4>
+                        <p class="post-meta">12,345 followers • 2h ago</p>
+                    </div>
+                                      <button class="follow-btn post-follow-btn"><i class="fas fa-plus"></i> Follow</button>
+                </div>
+                <div class="post-content">
+                    <p>🚀 New breakthrough in AI technology! Check out the latest developments in machine learning and how it's transforming the tech industry. #AI #Tech #Innovation</p>
+                </div>
+                <div class="post-image">
+                    <img src="./assets/ai.jpg" alt="Post Image">
+                </div>
+                <div class="post-stats">
+                    <span><i class="fas fa-thumbs-up"></i> 1,234</span>
+                    <span>45 comments</span>
+                </div>
+                <div class="post-actions">
+                    <div class="post-action"><i class="far fa-thumbs-up"></i> Like</div>
+                    <div class="post-action"><i class="far fa-comment"></i> Comment</div>
+                    <div class="post-action"><i class="far fa-share-square"></i> Repost</div>
+                    <div class="post-action"><i class="far fa-paper-plane"></i> Send</div>
+                </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="post">
+                <div class="post-header">
+                    <img src="./assets/user2.png" alt="User" class="post-profile-img">
+                    <div class="post-user-info">
+                        <h4>Ellyse Perry</h4>
+                        <p class="post-meta">Frontend Developer at Google • 5h ago</p>
+                    </div>
+                    <button class="follow-btn post-follow-btn following">Following <i class="fas fa-check"></i></button>
+                </div>
+                <div class="post-content">
+                    <p>✨ Excited to share my new project - A Netflix clone built with HTML, CSS, and Flexbox! This was a great learning experience for understanding layout and responsive design. Check it out on my GitHub!</p>
+                </div>
+                 <div class="post-image">
+                    <img src="./assets/netflix.png" alt="Post Image">
+                </div>
+                <div class="post-stats">
+                    <span><i class="fas fa-thumbs-up"></i> 234</span>
+                    <span>12 comments</span>
+                </div>
+                <div class="post-actions">
+                    <div class="post-action"><i class="far fa-thumbs-up"></i> Like</div>
+                    <div class="post-action"><i class="far fa-comment"></i> Comment</div>
+                    <div class="post-action"><i class="far fa-share-square"></i> Repost</div>
+                    <div class="post-action"><i class="far fa-paper-plane"></i> Send</div>
+                </div>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="post">
+                <div class="post-header">
+                    <img src="./assets/web developer.png" alt="User" class="post-profile-img">
+                    <div class="post-user-info">
+                        <h4>Web Dev Weekly</h4>
+                    
+                        <p class="post-meta">45,678 followers • 1d ago</p>
+                    </div>
+                                    <button class="follow-btn post-follow-btn"><i class="fas fa-plus"></i> Follow</button>
+                </div>
+                <div class="post-content">
+                    <p>📚 Top 10 CSS Flexbox tips every developer should know:</p>
+                    <ul style="margin-left: 20px; color: #666;">
+                        <li>Use gap property instead of margin</li>
+                        <li>flex-wrap for responsive layouts</li>
+                        <li>align-self for individual alignment</li>
+                        <li>flex-basis for initial size</li>
+                    </ul>
+                </div>
+                <div class="post-stats">
+                    <span><i class="fas fa-thumbs-up"></i> 3,456</span>
+                    <span>89 comments</span>
+                </div>
+                <div class="post-actions">
+                    <div class="post-action"><i class="far fa-thumbs-up"></i> Like</div>
+                    <div class="post-action"><i class="far fa-comment"></i> Comment</div>
+                    <div class="post-action"><i class="far fa-share-square"></i> Repost</div>
+                    <div class="post-action"><i class="far fa-paper-plane"></i> Send</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <!-- News Card -->
+            <div class="sidebar-card">
+                <div class="card-header">
+                    <h4>LinkedIn News</h4>
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <div class="news-item">
+                    <span class="news-title">Tech layoffs continue</span>
+                    <span class="news-meta">2d ago • 12,345 readers</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-title">AI skills in demand</span>
+                    <span class="news-meta">1d ago • 8,234 readers</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-title">Remote work trends 2026</span>
+                    <span class="news-meta">3d ago • 5,678 readers</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-title">JavaScript frameworks</span>
+                    <span class="news-meta">5h ago • 3,456 readers</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-title">Frontend developer salary</span>
+                    <span class="news-meta">1w ago • 2,345 readers</span>
+                </div>
+            </div>
+
+            <!-- People You May Know -->
+           <div class="sidebar-card">
+    <h4>People you may know</h4>
+    
+    <div class="suggestion-item">
+        <img src="./assets/u1.png" alt="Mike Smith">
+        <div class="suggestion-info">
+            <h5>Mike Smith</h5>
+            <p>Senior Developer at Amazon</p>
+            <button class="connect-btn"><i class="fas fa-user-plus"></i> Connect</button>
+        </div>
+    </div>
+
+    <div class="suggestion-item">
+        <img src="./assets/i1.jpg" alt="Smrithi Mandana">
+        <div class="suggestion-info">
+            <h5>Smrithi Mandana</h5>
+            <p>UI/UX Designer at Netflix</p>
+            <button class="connect-btn"><i class="fas fa-user-plus"></i> Connect</button>
+        </div>
+    </div>
+</div>
+
+            <div class="sidebar-card">
+                <h4>Trending courses</h4>
+                <div class="trending-item">
+                    <span class="trending-title">React: The Complete Guide</span>
+                    <span class="trending-meta">12,345 enrolled</span>
+                </div>
+                <div class="trending-item">
+                    <span class="trending-title">JavaScript: The Advanced Concepts</span>
+                    <span class="trending-meta">8,901 enrolled</span>
+                </div>
+                <div class="trending-item">
+                    <span class="trending-title">CSS for Professionals</span>
+                    <span class="trending-meta">6,789 enrolled</span>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Simple Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms</a>
+                <a href="#">Ad Choices</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+            <p class="copyright">
+                <i class="fab fa-linkedin"></i> LinkedIn Clone Project © 2026
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
